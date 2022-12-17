@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paga Facil</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body class="container">
+    <!-- Modulo de sesion. -->
+    <div class="row justify-content-center" id="mod_sesion"></div>
+    <!-- Modulo de cuotas -->
+    <div class="row justify-content-center mt-5" id="mod_cuotas">
+        <div class="col" id="mod_opcion">
+            <div class="card">
+                <div class="card-body">
+                    <h5>ESCOGE UNA OPCIÓN.</h5>
+                    <hr>
+                    <div class="row pl-2" id="opcionSelect"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col" id="mod_form">
+            <div class="card mt-1 col-md-10" id="cont_card">
+                <div class="card-body" id="consultarCuotas">
+                    <form id="form_cuotas">
+
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title">Información del cliente</h5>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="card-text text-center">Realiza el pago de tu suscripción.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="desde">Desde:</label>
+                                <p id="fecha_desde"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="hasta">Hasta:</label>
+                                <p id="fecha_haste"></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control form-control-sm" name="nombre" id="nombre" placeholder="Nombre" value="">
+                            </div>
+                            <div class="col">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" class="form-control form-control-sm" name="apellido" id="apellido" placeholder="Apellido" value="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="cedula">N° de cédula</label>
+                                <input type="number" class="form-control form-control-sm" name="cedula" id="cedula" placeholder="N° de cédula" value="">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="poliza">N° de Poliza</label>
+                                <input type="text" class="form-control form-control-sm" name="poliza" id="poliza" placeholder="N° de poliza" value="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="cuotas">Cuotas</label>
+                                <select name="cuotas" id="cuotas" class="form-control form-control-sm">
+                                    <option value="0">Número de cuotas</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="total">Valor a pagar</label>
+                                <input type="text" class="form-control form-control-sm" name="total" id="total" placeholder="Valor a pagar" value="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="celular">Celular</label>
+                                <input type="number" class="form-control form-control-sm" name="celular" id="celular" placeholder="Celular" value="">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row justify-content-center mt-1">
+                            <button type="button" class="btn btn-primary" id="btn_seleccionar">Seleccionar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

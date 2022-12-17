@@ -1,0 +1,83 @@
+body{
+    /* background-color: #6515FA;  #f7f7f74b  */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,9,121,1) 37%, rgba(0,212,255,1) 100%);
+    color: white; 
+}
+
+#cont_card{
+    margin: auto;
+}
+
+#login{
+    justify-content: center;
+    display: flex;
+    height: 550px;
+    margin-top: 100px;
+    width: 100%
+}
+
+#login label{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+#contenedor_img{
+    width: 400px;
+}
+
+#contenedor_form_login{
+    padding-top: 20px;
+    padding-left: 50px;
+    width: 500px;
+}
+
+#contenedor_form_login h1{
+    margin-bottom: 30px;
+}
+
+#contenedor_form_login h2{
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
+#imagen_logo{
+    border-radius: 20px;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+    width: 100%;
+}
+
+#btn_consultar{
+    background-color: #4B0979;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+    width: 200px;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+#btn_seleccionar{
+    background-color: #4B0979;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+#btn_consultar:hover, #btn_seleccionar:hover{
+    background-color: #00d4ff;
+    color: #4B0979;
+    font-weight: 500;
+}
+
+#mod_opcion, #mod_form{
+    color: black;
+}
