@@ -14,6 +14,10 @@ let valor_cuota, fecha_cubierta, numero_cuotas;
 
 btnSeleccionar.disabled = true;
 
+for (let i = 0; i <= 12; i++) {
+    cuotas.innerHTML += `<option value="${i}">${i}</option>`;
+}
+
 
 export const crearOpcionesHtml = ( contratantes ) =>{
 
